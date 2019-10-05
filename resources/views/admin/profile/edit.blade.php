@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-//応用】 3. の答えを実際に作成してみましょう。また、作成したbladeファイルにhtmlで記述して装飾してみましょう。//
-
 <html>
     <head>
          <meta charset="utf-8">
