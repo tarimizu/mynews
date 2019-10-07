@@ -7,18 +7,19 @@ use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
-    //以下を追記
     
     public function add()
   {
       return view('admin.profile.create');
   }
-
-  public function create()
+  
+    // 以下を追記
+  public function create(Request $request)
   {
+      // admin/profile/createにリダイレクトする
       return redirect('admin/profile/create');
-  }
-
+  }  
+  
  public function edit()
  {
     return view('admin.profile.edit');
