@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+use App\profile;
 
 class ProfileController extends Controller
 {
@@ -13,7 +14,7 @@ class ProfileController extends Controller
       return view('admin.profile.create');
   }
   
-    // 以下を追記
+ 
   public function create(Request $request)
   {
       // admin/profile/createにリダイレクトする
