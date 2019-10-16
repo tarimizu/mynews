@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Profile;
+use App\History;
+use Carbon\Carbon;
 
 class ProfileController extends Controller
 {
@@ -56,9 +58,7 @@ public function update(Request $request)
    {
  
       $this->validate($request, Profile::$rules);
-      
       $profile = Profile::find($request->id);
-
       $profile_form = $request->all();
       if (isset($profile_form['image'])) {
         $path = $request->file('image')->store('public/image');
@@ -69,10 +69,14 @@ public function update(Request $request)
         unset($profile_form['remove']);
       }
       unset($profile_form['_token']);
-  
       $profile->fill($profile_form)->save();
+      
+      $history = new History;
+        $history->profile_id = $profile->id;
+        $history->edited_at = Carbon::now();
+        $history->save();
 
-      return redirect('admin/profile');
+      return redirect('admin/profile/');
     }
     
       public function delete(Request $request)
