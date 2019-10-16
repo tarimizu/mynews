@@ -24,24 +24,24 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="title"> 名前（name） </label>
                         <div class="col-md-5">
-                            <input type="text" class="form-control" name="body" value="{{ old('body') }}">
+                            <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                     </div>
                     
             　　　　<div class="form-group row">
                         <label class="col-md-2" for="title"> 性別 (gender) </label>
                         <div class="col-md-5">
-                            <input type="text" class="form-control" name="body"  value="{{ old('body')}}">
+                            <input type="text" class="form-control" name="gender"  value="{{ old('gender')}}">
                     </div>
         　　　    　　　<div class="form-group row">
                         <label class="col-md-2" for="title"> 趣味 (hobby) </label>
                         <div class="col-md-5">
-                            <input type="text" class="form-control" name="body"  value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="hobby"  value="{{ old('hobby') }}">
                     </div>
         　　　
         　　     　　　<div class="form-group row">
                         <label class="col-md-2" for="title"> 自己紹介欄 (introduction) </label>
                         <div class="col-md-5">
-                            <input type="text" class="form-control" name="body" value="{{ old('body')}}">
+                            <input type="text" class="form-control" name="introduction" value="{{ old('introduction')}}">
                     </div>
                     
                     {{ csrf_field() }}
