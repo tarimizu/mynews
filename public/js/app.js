@@ -36968,6 +36968,17 @@ if (token) {
 
 /***/ }),
 
+/***/ "./resources/sass/Profile_front.scss":
+/*!*******************************************!*\
+  !*** ./resources/sass/Profile_front.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/admin.scss":
 /*!***********************************!*\
   !*** ./resources/sass/admin.scss ***!
@@ -36990,6 +37001,17 @@ if (token) {
 
 /***/ }),
 
+/***/ "./resources/sass/front.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/front.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/profile.scss":
 /*!*************************************!*\
   !*** ./resources/sass/profile.scss ***!
@@ -37002,16 +37024,18 @@ if (token) {
 /***/ }),
 
 /***/ 0:
-/*!***********************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/profile.scss ***!
-  \***********************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/profile.scss ./resources/sass/front.scss ./resources/sass/Profile_front.scss ***!
+  \***************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/ec2-user/environment/mynews/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /home/ec2-user/environment/mynews/resources/sass/app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! /home/ec2-user/environment/mynews/resources/sass/admin.scss */"./resources/sass/admin.scss");
-module.exports = __webpack_require__(/*! /home/ec2-user/environment/mynews/resources/sass/profile.scss */"./resources/sass/profile.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mynews/resources/sass/profile.scss */"./resources/sass/profile.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mynews/resources/sass/front.scss */"./resources/sass/front.scss");
+module.exports = __webpack_require__(/*! /home/ec2-user/environment/mynews/resources/sass/Profile_front.scss */"./resources/sass/Profile_front.scss");
 
 
 /***/ })
