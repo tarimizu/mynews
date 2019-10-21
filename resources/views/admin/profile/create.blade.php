@@ -32,6 +32,7 @@
                         <div class="col-md-5">
                             <input type="text" class="form-control" name="gender"  value="{{ old('gender')}}">
                     </div>
+                    
         　　　    　　　<div class="form-group row">
                         <label class="col-md-2" for="title"> 趣味 (hobby) </label>
                         <div class="col-md-5">
@@ -47,7 +48,7 @@
                     {{ csrf_field() }}
                     <input type="submit" class="btn btn-primary" value="更新">
               
-                </form>
+               　　　　　　 </form>
              </div>
          </div>
     </div>
