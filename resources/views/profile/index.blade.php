@@ -43,17 +43,17 @@
                                     {{ Str::limit($post->body, 1500) }}
                                 </div>
                             </div>
-                            <div class="image col-md-6 text-right mt-4">
+                            
+                                <div class="image col-md-6 text-right mt-4">
                                 @if ($post->image_path)
                                     <img src="{{ asset('storage/image/' . $post->image_path) }}">
                                 @endif
-                            </div>
+                                </div>
                         </div>
                     </div>
                     <hr color="#c0c0c0">
                 @endforeach
             </div>
         </div>
-    </div>
     </div>
 @endsection

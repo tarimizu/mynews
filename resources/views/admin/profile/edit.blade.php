@@ -20,20 +20,26 @@
                             <input type="text" class="form-control" name="name" value="{{ $profile_form->name }}">
                         </div>
                     </div>
+                    
                     <div class="form-group row">
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="gender" rows="20">{{ $profile_form->gender }}</textarea>
+                        </div>
                     </div>
+                    
                     <div class="form-group row">
                         <label class="col-md-2" for="hobby">趣味</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="hobby" rows="20">{{ $profile_form->hobby }}</textarea>
+                        </div>
                     </div>
+                    
                 　　<div class="form-group row">
                         <label class="col-md-2" for="introduction">自己紹介欄</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="introduction" rows="20">{{ $profile_form->introduction }}</textarea>
+                        </div>
                     </div>
                             
                     
@@ -44,6 +50,7 @@
                             <input type="submit" class="btn btn-primary" value="更新">
                         </div>
                     </div>
+                    
                 </form>
                 <div class="row mt-5">
                     <div class="col-md-4 mx-auto">
@@ -55,7 +62,9 @@
                                 @endforeach
                             @endif
                         </ul>
+                    </div>
                 </div>
-          </div>
-    </div>
+            </div>
+        </div>
+    </div>    
 @endsection
