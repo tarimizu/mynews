@@ -37,7 +37,8 @@
                                 <th width="10%">ID</th>
                                 <th width="20%">名前</th>
                                 <th width="50%">性別</th>
-                                <th width="10%">操作</th>
+                                <th width="10%">趣味</th>
+                                <th width="10%">自己紹介欄</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,7 +47,8 @@
                                     <th>{{ $profile->id }}</th>
                                     <td>{{ Str::limit($profile->name, 100) }}</td>
                                     <td>{{ Str::limit($profile->gender, 250) }}</td>
-                                    <td>
+                                    <td>{{ Str::limit($profile->hobby, 250) }}</td>
+                                    <td>{{ Str::limit($profile->introduction, 250) }}</td>
                                         <div>
                                             <a href="{{ action('Admin\ProfileController@edit', ['id' => $profile->id]) }}">編集</a>
                                         </div>
@@ -57,7 +59,6 @@
                                 </tr>
                             @endforeach
                         </tbody>
-                          
                     </table>
                 </div>
             </div>
